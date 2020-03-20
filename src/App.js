@@ -3,12 +3,12 @@ import "./App.css";
 import BodyPart from "./components/BodyPart";
 
 const data = [
-  { title: "Neck" },
-  { title: "Shoulder" },
-  { title: "Back" },
-  { title: "Back" },
-  { title: "Back" },
-  { title: "Back" }
+  { title: "Neck & Shoulder" },
+  { title: "Lower Back" },
+  { title: "Core" },
+  { title: "Hip Flexor" },
+  { title: "Hamstrings" },
+  { title: "Hands & Wrists" }
 ];
 
 function App() {
