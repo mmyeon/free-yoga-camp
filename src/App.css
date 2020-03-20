@@ -1,8 +1,25 @@
+:root {
+  --primary-color: #764abc;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
+.body-align {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  /* justify-items: center; */
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.main-title {
+  color: var(--primary-color);
+  font-size: 4em;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
