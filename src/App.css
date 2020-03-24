@@ -24,3 +24,9 @@
   color: var(--primary-color);
   font-size: 4em;
 }
+
+@media (max-width: 700px) {
+  .body-align {
+    grid-template-columns: 1fr;
+  }
+}
