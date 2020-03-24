@@ -7,7 +7,7 @@ function BodyPart({ title }) {
   return (
     <div className="body">
       {/* <h1>{props.title}</h1> */}
-      <h1>{title}</h1>
+      <h1 className={`my-${title.toLowerCase()}`}>{title}</h1>
     </div>
   );
 }

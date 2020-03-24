@@ -19,6 +19,7 @@ function App() {
         {data.map((item, index) => (
           <BodyPart key={index} title={item.title} />
         ))}
+
         {/* <BodyPart title={"Neck"} />
         <BodyPart title={"Shoulder"} />
         <BodyPart />
