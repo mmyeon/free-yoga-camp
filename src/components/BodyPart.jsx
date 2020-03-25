@@ -1,15 +1,13 @@
 import React from "react";
 import "./BodyPart.css";
 
-function BodyPart({ title }) {
+function BodyPart({ title, backgroundColor }) {
   //   console.log("props", props);
   // { title = "NoName" }
   return (
-    <div className="body_display">
-      <div className="body">
-        {/* <h1>{props.title}</h1> */}
-        <h3 className={`my-${title.toLowerCase()} bodypart`}>{title}</h3>
-      </div>
+    <div className="body" style={{ backgroundColor }}>
+      {/* <h1>{props.title}</h1> */}
+      <h3 className={`my-${title.toLowerCase()} bodypart`}>{title}</h3>
     </div>
   );
 }
