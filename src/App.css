@@ -14,3 +14,7 @@ h1 {
   grid-auto-flow: column;
   column-gap: 0px;
 }
+
+.carousel-item {
+  margin-right: 20px;
+}
