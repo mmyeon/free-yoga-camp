@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-.body {
-  box-sizing: content-box;
+/* .body {
+
   border: 5px solid #764abc;
   margin: 10px;
   color: #764abc;
@@ -16,4 +16,26 @@
   background-color: var(--primary-color);
   color: white;
   opacity: 50%;
+} */
+
+.body {
+  width: 156px;
+  height: 235px;
+  background-color: red;
+  margin-left: 10px;
+  margin-top: 50px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.bodypart {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: white;
+}
+
+.body_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

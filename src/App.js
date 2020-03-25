@@ -14,7 +14,8 @@ const data = [
 function App() {
   return (
     <div className="App">
-      <h1 className="main-title">Free Yoga Camp</h1>
+      <h1 className="title free">Free</h1>
+      <h1 className="title yogacamp">Yoga Camp</h1>
       <div className="body-align">
         {data.map((item, index) => (
           <BodyPart key={index} title={item.title} />

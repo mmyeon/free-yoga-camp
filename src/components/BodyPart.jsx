@@ -5,9 +5,11 @@ function BodyPart({ title }) {
   //   console.log("props", props);
   // { title = "NoName" }
   return (
-    <div className="body">
-      {/* <h1>{props.title}</h1> */}
-      <h1 className={`my-${title.toLowerCase()}`}>{title}</h1>
+    <div className="body_display">
+      <div className="body">
+        {/* <h1>{props.title}</h1> */}
+        <h3 className={`my-${title.toLowerCase()} bodypart`}>{title}</h3>
+      </div>
     </div>
   );
 }
