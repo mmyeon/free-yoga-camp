@@ -7,7 +7,7 @@ function BodyPart({ title, backgroundColor }) {
   return (
     <div className="body" style={{ backgroundColor }}>
       {/* <h1>{props.title}</h1> */}
-      <h3 className={`my-${title.toLowerCase()} bodypart`}>{title}</h3>
+      <h3 className={`bodypart`}>{title}</h3>
     </div>
   );
 }
