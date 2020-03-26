@@ -5,7 +5,11 @@ const data = [
     id: 1,
     title: <div>Neck & Shoulder</div>,
     backgroundColor: "#94ccfe",
-    backgroundImage: ""
+    backgroundImage: "",
+    playList: [
+      { url: "http://roie", title: "목운동1" },
+      { url: "http://roie", title: "목운동1" }
+    ]
   },
   {
     id: 2,
