@@ -1,30 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import BodyPart from "./components/BodyPart";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-const data = [
-  {
-    title: <div>Neck & Shoulder</div>,
-    backgroundColor: "#94ccfe",
-    backgroundImage: ""
-  },
-  { title: "Lower Back", backgroundColor: "#94ACFE", backgroundImage: "" },
-  { title: "Core", backgroundColor: "#BB94FE", backgroundImage: "" },
-  { title: "Hip Flexor", backgroundColor: "#5C9EF6", backgroundImage: "" },
-  { title: "Hamstrings", backgroundColor: "#D4CEED", backgroundImage: "" },
-  {
-    title: (
-      <div>
-        Hands & <br />
-        Wrists
-      </div>
-    ),
-    backgroundColor: "#94ccfe",
-    backgroundImage: ""
-  }
-];
+import db from "./db";
 
 function App() {
   return (
@@ -81,9 +60,9 @@ function App() {
           slidesToSlide={1}
           swipeable
         >
-          {data.map((item, index) => (
+          {db.map(item => (
             <BodyPart
-              key={index}
+              key={item.id}
               title={item.title}
               backgroundColor={item.backgroundColor}
             />
