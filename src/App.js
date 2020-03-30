@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import "react-multi-carousel/lib/styles.css";
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import Main from "./pages/main";
+import Main from "./routes/Home";
 import Neck from "./routes/Neck";
 
 function App() {

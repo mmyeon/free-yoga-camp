@@ -1,5 +1,5 @@
 import React from "react";
-import "./BodyPart.css";
+import "./index.css";
 
 function BodyPart({ title, backgroundColor }) {
   //   console.log("props", props);
