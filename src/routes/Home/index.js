@@ -62,7 +62,7 @@ export default function Main() {
           swipeable
         >
           {db.map(item => (
-            <Link to="neck">
+            <Link to="Detail">
               <BodyPart
                 key={item.id}
                 title={item.title}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Neck = () => {
+const Detail = label => {
   return (
     <div>
       <h1>목을 풀어주는 요가</h1>
@@ -18,4 +18,4 @@ const Neck = () => {
   );
 };
 
-export default Neck;
+export default Detail;
