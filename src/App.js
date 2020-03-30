@@ -4,7 +4,7 @@ import BodyPart from "./components/BodyPart";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import db from "./db";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 import Neck from "./routes/Neck";
 
 function App() {
@@ -62,17 +62,22 @@ function App() {
           slidesToSlide={1}
           swipeable
         >
-          {db.map(item => (
-            <BodyPart
-              key={item.id}
-              title={item.title}
-              backgroundColor={item.backgroundColor}
-            />
-          ))}
+          <Router>
+            <Route path="/neck" exact={true} component={Neck} />
+            <Route path="/lowerbac" exact={true} component={Neck} />
+
+            {db.map(item => (
+              <Link to="neck">
+                <BodyPart
+                  key={item.id}
+                  title={item.title}
+                  backgroundColor={item.backgroundColor}
+                />
+              </Link>
+            ))}
+          </Router>
         </Carousel>
-        <Router>
-          <Route path="/neck" exact={true} component={Neck} />
-        </Router>
+
         {/* <BodyPart title={"Neck"} />
         <BodyPart title={"Shoulder"} />
         <BodyPart />
