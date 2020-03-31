@@ -1,17 +1,16 @@
 import React from "react";
-import "./App.css";
-import "react-multi-carousel/lib/styles.css";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-import Main from "./routes/Home";
+import { HashRouter, Route } from "react-router-dom";
+import Home from "./routes/Home/Home";
 import Detail from "./routes/Detail";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <Route path="/" exact={true} component={Main} />
-      <Route path="/Detail" exact={true} component={Detail} />
+    <HashRouter>
+      <Route path="/" exact={true} component={Home} />
+      <Route path="/Detail" component={Detail} />
       {/* <Route path="/lowerbac" exact={true} component={Neck} /> */}
-    </Router>
+    </HashRouter>
   );
 }
 
