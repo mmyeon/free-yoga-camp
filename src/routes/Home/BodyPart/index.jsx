@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./index.css";
 
-function BodyPart({ id, title, backgroundColor, disc }) {
+function BodyPart({ id, title, backgroundColor, desc }) {
   //   console.log("props", props);
   // { title = "NoName" }
   return (

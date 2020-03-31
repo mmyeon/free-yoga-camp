@@ -1,21 +1,16 @@
 import React from "react";
+import db from "../db";
 
-const Detail = label => {
+function Detail(props) {
+  // console.log(props.match.params.id);
+  // console.log(db[0].desc);
+  const rigthBodyPart = db.find(item => item.id === props.match.params.id);
+
   return (
-    <div>
-      <h1>목을 풀어주는 요가</h1>
-      <sgv>
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          stroke="black"
-          stroke-width="3"
-          fill="red"
-        />{" "}
-      </sgv>
-    </div>
+    <>
+      <h1>{rigthBodyPart.desc}</h1>
+    </>
   );
-};
+}
 
 export default Detail;
