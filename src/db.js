@@ -4,6 +4,7 @@ const data = [
   {
     id: 1,
     title: <div>Neck & Shoulder</div>,
+    disc: "목을 풀어주는 요가",
     backgroundColor: "#94ccfe",
     backgroundImage: "",
     playList: [
@@ -14,6 +15,7 @@ const data = [
   {
     id: 2,
     title: "Lower Back",
+    disc: "허리를 풀어주는 요가",
     backgroundColor: "#94ACFE",
     backgroundImage: ""
   },
