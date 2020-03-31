@@ -1,12 +1,12 @@
 import React from "react";
+// import { HashRouter as Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import db from "../../db";
-import { HashRouter as Router, Route, Link } from "react-router-dom";
-import "./index.css";
-import BodyPart from "../../components/BodyPart";
+import BodyPart from "./BodyPart";
+import "./Home.css";
 
-export default function Main() {
+export default function Home() {
   return (
     <div className="App">
       <div className="title_display">
@@ -62,13 +62,11 @@ export default function Main() {
           swipeable
         >
           {db.map(item => (
-            <Link to="Detail">
-              <BodyPart
-                key={item.id}
-                title={item.title}
-                backgroundColor={item.backgroundColor}
-              />
-            </Link>
+            <BodyPart
+              key={item.id}
+              title={item.title}
+              backgroundColor={item.backgroundColor}
+            />
           ))}
         </Carousel>
 
