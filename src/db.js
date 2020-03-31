@@ -8,8 +8,18 @@ const data = [
     backgroundColor: "#94ccfe",
     backgroundImage: "",
     playList: [
-      { url: "http://roie", title: "목운동1" },
-      { url: "http://roie", title: "목운동1" }
+      {
+        url: "https://www.youtube.com/watch?v=TH-Nbk-HUos",
+        title: "부드럽게 목을 움직이는 요가"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=rGp_q1Lth1c",
+        title: "목과 어깨를 풀어주는 요가"
+      },
+      {
+        url: "https://www.youtube.com/watch?v=SqjhjyWQ1TA",
+        title: "목 상부의 긴장을 풀어주는 서서하는 요가"
+      }
     ]
   },
   {
