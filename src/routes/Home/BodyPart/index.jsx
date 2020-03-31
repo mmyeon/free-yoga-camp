@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 function BodyPart({ title, backgroundColor }) {
   //   console.log("props", props);
   // { title = "NoName" }
   return (
-    <div className="body" style={{ backgroundColor }}>
-      {/* <h1>{props.title}</h1> */}
-      <h3 className={`bodypart`}>{title}</h3>
-    </div>
+    <Link to="/Detail">
+      <div className="body" style={{ backgroundColor }}>
+        {/* <h1>{props.title}</h1> */}
+        <h3 className={`bodypart`}>{title}</h3>
+      </div>
+    </Link>
   );
 }
 
