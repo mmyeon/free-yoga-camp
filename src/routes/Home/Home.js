@@ -64,7 +64,9 @@ export default function Home() {
           {db.map(item => (
             <BodyPart
               key={item.id}
+              id={item.id}
               title={item.title}
+              discription={item.disc}
               backgroundColor={item.backgroundColor}
             />
           ))}
