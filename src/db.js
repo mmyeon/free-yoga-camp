@@ -2,7 +2,7 @@ import React from "react";
 
 const data = [
   {
-    id: 1,
+    id: "neck",
     title: <div>Neck & Shoulder</div>,
     disc: "목을 풀어주는 요가",
     backgroundColor: "#94ccfe",
@@ -13,32 +13,32 @@ const data = [
     ]
   },
   {
-    id: 2,
+    id: "lowerback",
     title: "Lower Back",
     disc: "허리를 풀어주는 요가",
     backgroundColor: "#94ACFE",
     backgroundImage: ""
   },
   {
-    id: 3,
+    id: "core",
     title: "Core",
     backgroundColor: "#BB94FE",
     backgroundImage: ""
   },
   {
-    id: 4,
+    id: "hipflexor",
     title: "Hip Flexor",
     backgroundColor: "#5C9EF6",
     backgroundImage: ""
   },
   {
-    id: 5,
+    id: "hampstring",
     title: "Hamstrings",
     backgroundColor: "#D4CEED",
     backgroundImage: ""
   },
   {
-    id: 6,
+    id: "wrists",
     title: (
       <div>
         Hands & <br />

@@ -8,7 +8,7 @@ function App() {
   return (
     <HashRouter>
       <Route path="/" exact={true} component={Home} />
-      <Route path="/Detail/:id" component={Detail} />
+      <Route path="/:id" component={Detail} />
       {/* <Route path="/lowerbac" exact={true} component={Neck} /> */}
     </HashRouter>
   );
