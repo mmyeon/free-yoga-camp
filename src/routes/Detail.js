@@ -1,17 +1,17 @@
 import React from "react";
 import db from "../db";
 import "./Detail.css";
+import Videolist from "./Videolist";
 
 function Detail(props) {
   // console.log(props.match.params.id);
   // console.log(db[0].desc);
-  const rigthBodyPart = db.find(item => item.id === props.match.params.id);
-  console.log(rigthBodyPart.playList);
+  const rightBodyPart = db.find(item => item.id === props.match.params.id);
   // const yogaVideoList = db.map(item => )
 
   return (
     <>
-      <h1 className="detail-desc">{rigthBodyPart.desc}</h1>
+      <h1 className="detail-desc">{rightBodyPart.desc}</h1>
       <ul>
         <li>
           <div className="circle">
@@ -23,17 +23,22 @@ function Detail(props) {
                   cy="50px"
                   r="10px"
                   stroke="black"
-                  stroke-width="3px"
+                  strokeWidth="3px"
                   fill="white"
                 ></circle>
               </g>
             </svg>
             <div className="yogaVideoList">
-              {rigthBodyPart.playList.map(item => (
-                <li>
-                  <a href={item.url}>{item.title}</a>
-                </li>
-              ))}
+              <ul>
+                {rightBodyPart.playList.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <a href={item.url}>{item.title}</a>
+                      <Videolist />
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
             <a href="https://developer.mozilla.org/ko/docs/Web/SVG/Element/circle">
               하하하

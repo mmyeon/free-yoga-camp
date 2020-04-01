@@ -1,0 +1,21 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.detail-desc {
+  padding: 40px;
+}
+
+html,
+body,
+svg {
+  height: 100%;
+}
+
+.circle {
+  display: flex;
+}
