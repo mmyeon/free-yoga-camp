@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 import Home from "./components/Home";
 import Detail from "./routes/Detail";
 import "./App.css";
@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <HashRouter>
-      <Navigation />
+      <Header />
       <Route path="/" exact={true} component={Home} />
       <Route path="/body/:id" component={Detail} />
     </HashRouter>
