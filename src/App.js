@@ -3,7 +3,7 @@ import { HashRouter, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Detail from "./routes/Detail";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
