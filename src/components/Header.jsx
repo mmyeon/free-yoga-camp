@@ -12,11 +12,16 @@ const Header = () => {
   return (
     <div>
       {isOpenedSideNav && (
-        <div id="sideNav">
-          <ul>
-            <li>상체를 위한 요가</li>
-          </ul>
-          <div onClick={handleClick}>닫기</div>
+        <div className="side-nav overlay">
+          <div className="side-nav">
+            <i className="fas fa-times close-btn" onClick={handleClick}></i>
+            <ul>
+              <li>상체를 위한 요가</li>
+              <li>상체를 위한 요가</li>
+              <li>상체를 위한 요가</li>
+              <li>상체를 위한 요가</li>
+            </ul>
+          </div>
         </div>
       )}
       <div className="header">
