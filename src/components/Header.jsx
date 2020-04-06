@@ -11,8 +11,8 @@ const Header = () => {
 
   return (
     <div>
-      {isOpenedSideNav && (
-        <div className="side-nav overlay">
+      {/* <div className={`side-nav-container ${isOpenedSideNav ? "active" : ""}`}>
+        <div className={`side-nav-overlay`}>
           <div className="side-nav">
             <i className="fas fa-times close-btn" onClick={handleClick}></i>
             <ul>
@@ -23,7 +23,25 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      )}
+      </div> */}
+      {/* <div className={`side-nav-container ${isOpenedSideNav ? "active" : ""}`}> */}
+      <div
+        className={`side-nav-overlay ${
+          isOpenedSideNav ? "overlay-active" : ""
+        }`}
+      >
+        <div className={`side-nav ${isOpenedSideNav ? "active" : ""}`}>
+          <i className="fas fa-times close-btn" onClick={handleClick}></i>
+          {/* <ul>
+            <li>상체를 위한 요가</li>
+            <li>상체를 위한 요가</li>
+            <li>상체를 위한 요가</li>
+            <li>상체를 위한 요가</li>
+          </ul> */}
+          <a href="aa">ddd</a>
+        </div>
+      </div>
+      {/* // </div> */}
       <div className="header">
         <div className="container">
           <a onClick={handleClick}>
@@ -34,6 +52,9 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <body>
+        <div className="center-image">dd</div>
+      </body>
     </div>
   );
 };
