@@ -10,8 +10,10 @@ function App() {
   return (
     <HashRouter>
       <Header />
-      <Route path="/" exact={true} component={Home} />
-      <Route path="/body/:id" component={Detail} />
+      <div style={{ marginTop: "50px" }}>
+        <Route path="/" exact={true} component={Home} />
+        <Route path="/body/:id" component={Detail} />
+      </div>
     </HashRouter>
   );
 }

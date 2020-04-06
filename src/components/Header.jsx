@@ -39,9 +39,6 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <body>
-        <div className="center-image">dd</div>
-      </body>
     </div>
   );
 };
