@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Home from "./components/Home";
+import Main from "./components/Main";
 import Detail from "./routes/Detail";
 
 import "./App.scss";
@@ -11,7 +11,7 @@ function App() {
     <HashRouter>
       <Header />
       <div style={{ marginTop: "50px" }}>
-        <Route path="/" exact={true} component={Home} />
+        <Route path="/" exact={true} component={Main} />
         <Route path="/body/:id" component={Detail} />
       </div>
     </HashRouter>
