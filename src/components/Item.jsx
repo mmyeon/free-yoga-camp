@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Item.scss";
 
-const Item = ({ title, desc, backgroundColor }) => {
-  const [isOpenedBodyItem, setIsOpenedBodyItem] = useState(false);
-
+const Item = ({
+  id,
+  title,
+  desc,
+  backgroundColor,
+  activeItemId,
+  setActiveItemId,
+}) => {
   function handleClick() {
-    setIsOpenedBodyItem(!isOpenedBodyItem);
+    // console.log(activeItemId);
+    setActiveItemId({ id });
   }
 
   return (
     <div
-      className={`body-item ${isOpenedBodyItem ? "clicked" : ""}`}
+      className={`body-item ${activeItemId.id === id ? "clicked" : ""}`}
       style={{ backgroundColor }}
       onClick={handleClick}
     >
