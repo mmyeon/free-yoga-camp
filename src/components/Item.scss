@@ -11,9 +11,24 @@
   top: 50px;
   margin: 7px 17px;
 
-  span {
+  div {
     margin-bottom: 15px;
     font-size: 18px;
     color: rgb(0, 0, 0);
   }
+}
+
+img {
+  position: absolute;
+  object-fit: cover;
+  object-position: 10% 50%;
+  width: 288px;
+  height: 85px;
+
+  //   span {
+  //     margin-bottom: 15px;
+  //     font-size: 18px;
+  //     color: rgb(0, 0, 0);
+  //   }
+  // }
 }
