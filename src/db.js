@@ -11,7 +11,8 @@ const data = [
     title: <div>Neck & Shoulder</div>,
     desc: "목과 어깨를 풀어주는 요가",
     backgroundColor: "#94ccfe",
-    backgroundImage: `url(${imgMainNeck})`,
+    imageUrl: imgMainNeck,
+    // image: `url(${imgMainNeck})`,
     playList: [
       {
         url: "https://www.youtube.com/watch?v=TH-Nbk-HUos&t=797s",

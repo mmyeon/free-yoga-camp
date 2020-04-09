@@ -15,7 +15,7 @@ const Main = () => {
           title={item.title}
           desc={item.desc}
           bgColor={item.backgroundColor}
-          bgImage={item.backgroundImage}
+          imageUrl={item.imageUrl}
           activeItemId={activeItemId}
           setActiveItemId={setActiveItemId}
         />
