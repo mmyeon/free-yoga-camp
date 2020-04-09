@@ -5,9 +5,10 @@ const Item = ({
   id,
   title,
   desc,
-  backgroundColor,
+  bgColor,
   activeItemId,
   setActiveItemId,
+  bgImage,
 }) => {
   function handleClick() {
     // console.log(activeItemId);
@@ -17,7 +18,8 @@ const Item = ({
   return (
     <div
       className={`body-item ${activeItemId.id === id ? "clicked" : ""}`}
-      style={{ backgroundColor }}
+      // style={{ bgColor, bgImage }}
+      style={{ backgroundColor: bgColor, backgroundImage: bgImage }}
       onClick={handleClick}
     >
       <div>
