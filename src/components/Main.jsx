@@ -18,6 +18,7 @@ const Main = () => {
           imageUrl={item.imageUrl}
           activeItemId={activeItemId}
           setActiveItemId={setActiveItemId}
+          objectPosition={item.objectPosition}
         />
       ))}
     </div>

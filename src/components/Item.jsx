@@ -9,6 +9,7 @@ const Item = ({
   activeItemId,
   setActiveItemId,
   imageUrl,
+  objectPosition,
 }) => {
   function handleClick() {
     // console.log(activeItemId);
@@ -19,7 +20,7 @@ const Item = ({
     // <div>
     <div
       className={`body-item ${activeItemId.id === id ? "clicked" : ""}`}
-      // className="container"
+      // className="body-item"
       // style={{ bgColor, bgImage }}
       style={{
         backgroundColor: bgColor,
@@ -30,14 +31,15 @@ const Item = ({
       <img
         className={`yoga-pose ${activeItemId.id === id ? "clicked" : ""}`}
         src={imageUrl}
-        // alt="yoga pose"
+        alt="yoga pose"
         width="100%"
         height="100%"
+        style={{ objectPosition }}
         // onClick={handleClick}
       />
       <div>
         <div className="text">
-          <div>{title}</div>
+          <div className="title">{title}</div>
         </div>
       </div>
     </div>
