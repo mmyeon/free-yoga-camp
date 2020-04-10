@@ -12,6 +12,8 @@ const data = [
     desc: "목과 어깨를 풀어주는 요가",
     backgroundColor: "#94ccfe",
     imageUrl: imgMainNeck,
+    // objectPosition: "10% 50%",
+    objectPosition: "5% 50%",
     // image: `url(${imgMainNeck})`,
     playList: [
       {
@@ -40,6 +42,7 @@ const data = [
     desc: "척추를 풀어주는 요가",
     backgroundColor: "#94ACFE",
     imageUrl: imgMainSpine,
+    objectPosition: "40% 20%",
   },
   {
     id: "core",
@@ -47,6 +50,7 @@ const data = [
     desc: "전신을 강화하는 요가",
     backgroundColor: "#BB94FE",
     imageUrl: imgMainCore,
+    objectPosition: "40% 76%",
   },
   {
     id: "hip",
@@ -54,6 +58,7 @@ const data = [
     desc: "고관절 주변을 풀어주는 요가",
     backgroundColor: "#5C9EF6",
     imageUrl: imgMainHip,
+    objectPosition: "50% 99%",
   },
   {
     id: "legs",
@@ -61,6 +66,7 @@ const data = [
     desc: "햄스프링을 늘리는 요가",
     backgroundColor: "#D4CEED",
     imageUrl: imgMainLegs,
+    objectPosition: "60% 60%",
   },
   // {
   //   id: "wrists",
