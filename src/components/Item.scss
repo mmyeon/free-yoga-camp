@@ -12,6 +12,7 @@
   margin: 7px 17px;
 
   div {
+    position: absolute;
     margin-bottom: 15px;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -21,7 +22,6 @@
 img {
   position: absolute;
   object-fit: cover;
-  object-position: 10% 50%;
   width: 288px;
   height: 85px;
 
@@ -31,4 +31,15 @@ img {
   //     color: rgb(0, 0, 0);
   //   }
   // }
+}
+
+.text {
+  top: 20px;
+  left: 20px;
+}
+
+.title {
+  div {
+    color: white;
+  }
 }
