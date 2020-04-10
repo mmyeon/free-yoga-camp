@@ -12,9 +12,7 @@ const data = [
     desc: "목과 어깨를 풀어주는 요가",
     backgroundColor: "#94ccfe",
     imageUrl: imgMainNeck,
-    // objectPosition: "10% 50%",
     objectPosition: "5% 50%",
-    // image: `url(${imgMainNeck})`,
     playList: [
       {
         url: "https://www.youtube.com/watch?v=TH-Nbk-HUos&t=797s",
@@ -68,18 +66,6 @@ const data = [
     imageUrl: imgMainLegs,
     objectPosition: "60% 60%",
   },
-  // {
-  //   id: "wrists",
-  //   title: (
-  //     <div>
-  //       Hands & <br />
-  //       Wrists
-  //     </div>
-  //   ),
-  //   desc: "손목을 풀어주는 요가",
-  //   backgroundColor: "#94ccfe",
-  //   backgroundImage: "",
-  // },
 ];
 
 export default data;
