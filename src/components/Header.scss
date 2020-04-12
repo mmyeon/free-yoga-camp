@@ -6,7 +6,7 @@
 }
 
 .side-nav-overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
@@ -70,7 +70,6 @@
   width: 100%;
   top: 0px;
   left: 0px;
-  background-color: #ffffff;
 
   .container {
     position: fixed;
@@ -80,6 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff;
     z-index: 1050;
 
     .header-icons {
