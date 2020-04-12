@@ -11,27 +11,29 @@ const Item = ({
   imageUrl,
   objectPosition,
 }) => {
-  function handleClick() {
-    setActiveItemId({ id });
-  }
   return (
     <div
-      className={`body-item ${activeItemId.id === id ? "clicked" : ""}`}
+      className={`body-item ${activeItemId === id ? "clicked" : ""}`}
       onClick={handleClick}
     >
       <img
-        className={`yoga-pose ${activeItemId.id === id ? "clicked" : ""}`}
+        className={`yoga-pose ${activeItemId === id ? "clicked" : ""}`}
         src={imageUrl}
         alt="yoga pose"
         width="100%"
         height="100%"
         style={{ objectPosition }}
       />
-      {/* <div className="text">
+      <div className="text">
         <div className="title">{title}</div>
-      </div> */}
+        {activeItemId === id && <div>{desc}</div>}
+      </div>
     </div>
   );
+
+  function handleClick() {
+    setActiveItemId(id);
+  }
 };
 
 export default Item;
