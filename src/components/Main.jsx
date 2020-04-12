@@ -4,7 +4,7 @@ import Item from "./Item";
 import "./Main.scss";
 
 const Main = () => {
-  const [activeItemId, setActiveItemId] = useState("");
+  const [activeItemId, setActiveItemId] = useState("neck");
 
   return (
     <div className="item-container">
