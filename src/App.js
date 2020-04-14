@@ -12,7 +12,8 @@ function App() {
       <HashRouter>
         <Header />
         <Route path="/" exact={true} component={Main}></Route>
-        <Route path="/id" component={Detail}></Route>
+        {/* <Route path="/id" component={Detail}></Route> */}
+        <Route path="/:id" component={Detail}></Route>
       </HashRouter>
     </div>
   );
