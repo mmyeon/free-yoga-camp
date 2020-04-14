@@ -53,10 +53,12 @@ img {
 
 .text {
   margin-left: 30px;
-
   position: relative;
   left: 20px;
-  // top: 50px;
+
+  a {
+    color: white;
+  }
 }
 
 .title {
