@@ -4,6 +4,7 @@ import "./Item.scss";
 const Item = ({
   id,
   title,
+  titleDetail,
   desc,
   bgColor,
   activeItemId,
@@ -26,7 +27,12 @@ const Item = ({
       />
       <div className="text">
         <div className="title">{title}</div>
-        {activeItemId === id && <div>{desc}</div>}
+        <div className={`title-detail ${activeItemId === id ? "visible" : ""}`}>
+          {titleDetail}
+        </div>
+        <div className={`action-text ${activeItemId === id ? "visible" : ""}`}>
+          수련하기
+        </div>
       </div>
     </div>
   );

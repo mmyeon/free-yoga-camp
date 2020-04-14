@@ -9,6 +9,8 @@ const data = [
   {
     id: "neck",
     title: <div>Neck & Shoulder</div>,
+    titleDetail:
+      "목과 어깨가 뻐근하신가요? 편안한 어깨와 목을 원하시나요? 쉬운 움직임부터 시작해 긴장된 경추와 흉추를 풀어줍니다. ",
     desc: "목과 어깨를 풀어주는 요가",
     backgroundColor: "#94ccfe",
     imageUrl: imgMainNeck,
@@ -37,6 +39,8 @@ const data = [
   {
     id: "spine",
     title: "Spine",
+    titleDetail:
+      "삶은 소유물이 아니라 순간순간의 있음이다. 영원한 것이 어디 있는가. 모두가 한때일 뿐, 그러나 그 한때를 최선을 다해 최대한으로 살 수 있어야 한다.삶은 놀라운 신비요, 아름다움이다.",
     desc: "척추를 풀어주는 요가",
     backgroundColor: "#94ACFE",
     imageUrl: imgMainSpine,
@@ -45,6 +49,8 @@ const data = [
   {
     id: "core",
     title: "Core",
+    titleDetail:
+      "삶은 소유물이 아니라 순간순간의 있음이다. 영원한 것이 어디 있는가. 모두가 한때일 뿐, 그러나 그 한때를 최선을 다해 최대한으로 살 수 있어야 한다.삶은 놀라운 신비요, 아름다움이다.",
     desc: "전신을 강화하는 요가",
     backgroundColor: "#BB94FE",
     imageUrl: imgMainCore,
@@ -53,6 +59,8 @@ const data = [
   {
     id: "hip",
     title: "Hip",
+    titleDetail:
+      "삶은 소유물이 아니라 순간순간의 있음이다. 영원한 것이 어디 있는가. 모두가 한때일 뿐, 그러나 그 한때를 최선을 다해 최대한으로 살 수 있어야 한다.삶은 놀라운 신비요, 아름다움이다.",
     desc: "고관절 주변을 풀어주는 요가",
     backgroundColor: "#5C9EF6",
     imageUrl: imgMainHip,
@@ -61,6 +69,8 @@ const data = [
   {
     id: "legs",
     title: "Legs",
+    titleDetail:
+      "삶은 소유물이 아니라 순간순간의 있음이다. 영원한 것이 어디 있는가. 모두가 한때일 뿐, 그러나 그 한때를 최선을 다해 최대한으로 살 수 있어야 한다.삶은 놀라운 신비요, 아름다움이다.",
     desc: "햄스프링을 늘리는 요가",
     backgroundColor: "#D4CEED",
     imageUrl: imgMainLegs,
