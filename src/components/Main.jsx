@@ -7,7 +7,7 @@ const Main = () => {
   const [activeItemId, setActiveItemId] = useState("neck");
 
   return (
-    <div className="item-container">
+    <div className="main-container">
       {db.map((item) => (
         <Item
           id={item.id}
@@ -21,7 +21,6 @@ const Main = () => {
           setActiveItemId={setActiveItemId}
           objectPosition={item.objectPosition}
         />
-        // </Link>
       ))}
     </div>
   );

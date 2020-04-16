@@ -15,7 +15,7 @@ const Item = ({
 }) => {
   return (
     <div
-      className={`body-item ${activeItemId === id ? "clicked" : ""}`}
+      className={`item-container ${activeItemId === id ? "clicked" : ""}`}
       onClick={handleClick}
     >
       <img
@@ -26,27 +26,19 @@ const Item = ({
         height="100%"
         style={{ objectPosition }}
       />
-      <div className="text">
+      <div className="content">
         <div className="title">{title}</div>
-        <div className={`title-detail ${activeItemId === id ? "visible" : ""}`}>
+        <div className={`desc ${activeItemId === id ? "visible" : ""}`}>
           {titleDetail}
         </div>
         <Link to={{ pathname: `/${id}` }}>
-          <div
-            className={`action-text ${activeItemId === id ? "visible" : ""}`}
-          >
+          <div className={`action-btn ${activeItemId === id ? "visible" : ""}`}>
             수련하기
           </div>
         </Link>
       </div>
     </div>
   );
-
-  // <Link
-  //   to={{
-  //     pathname: `/${item.id}`,
-  //   }}
-  // >
 
   function handleClick() {
     setActiveItemId(id);
