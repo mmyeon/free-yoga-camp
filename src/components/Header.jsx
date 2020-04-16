@@ -10,12 +10,8 @@ const Header = () => {
   }
 
   return (
-    <div>
-      <div
-        className={`side-nav-overlay ${
-          isOpenedSideNav ? "overlay-active" : ""
-        }`}
-      >
+    <div className="header-container">
+      <div className={`side-nav-overlay ${isOpenedSideNav ? "active" : ""}`}>
         <div className={`side-nav ${isOpenedSideNav ? "active" : ""}`}>
           <i className="fas fa-times close-btn" onClick={handleClick}></i>
           {isOpenedSideNav && (
@@ -28,10 +24,9 @@ const Header = () => {
           )}
         </div>
       </div>
-      {/* // </div> */}
       <div className="header">
-        <div className="container">
-          <div className="header-icons">
+        <div className="icon-wrapper">
+          <div className="icons">
             <i className="fas fa-bars nav-bars" onClick={handleClick}></i>
             <i className="fas fa-wind logo"></i>
           </div>
