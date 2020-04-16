@@ -8,28 +8,38 @@ import imgMainLegs from "./assets/img/main/leg.jpeg";
 const data = [
   {
     id: "neck",
-    title: <div>Neck & Shoulder</div>,
-    titleDetail:
-      "목과 어깨가 뻐근하신가요? 편안한 어깨와 목을 원하시나요? 쉬운 움직임부터 시작해 긴장된 경추와 흉추를 풀어줍니다. ",
+    title: <span>Neck & Shoulder</span>,
+    titleDetail: (
+      <span>
+        목과 어깨가 뻐근하신가요? <br />
+        편안한 어깨와 목을 원하시나요? <br />
+        쉬운 움직임부터 시작해 <br />
+        긴장된 경추와 흉추를 풀어줍니다.
+      </span>
+    ),
     desc: "목과 어깨를 풀어주는 요가",
     backgroundColor: "#94ccfe",
     imageUrl: imgMainNeck,
     objectPosition: "5% 50%",
     playList: [
       {
-        url: "https://www.youtube.com/watch?v=TH-Nbk-HUos&t=797s",
+        // thumnail: "https://img.youtube.com/vi/OVlJOnHYVqA/mqdefault.jpg",
+        thumbnail: "https://img.youtube.com/vi/TH-Nbk-HUos/maxres3.jpg",
+        url: "https://youtu.be/TH-Nbk-HUos",
         title: "현재의 목과 등 상부의 긴장을 알아보는 요가 ",
         detail:
           "첫 시간입니다. 가볍게 시작해봅니다. 나의 목과 등 상부를 부드럽게 움직여, 움직임의 범위를 확인해봅니다.",
       },
       {
-        url: "https://www.youtube.com/watch?v=SqjhjyWQ1TA&t=3s",
+        thumbnail: "https://img.youtube.com/vi/SqjhjyWQ1TA/maxres3.jpg",
+        url: "https://youtu.be/",
         title: "목과 등 상부에 쌓인 긴장을 풀어주는 요가",
         detail:
           "이전 수련에서 다들 목에 쌓인 뻐근함 확인하셨나요? 이번 시간에는 목과 등 상부에 쌓인 습관적인 긴장을 풀어주는 요가를 진행합니다. 호흡이 끊기지 않게 이어가봅니다.",
       },
       {
-        url: "https://www.youtube.com/watch?v=Nvq0uEC3VDMA",
+        thumbnail: "https://img.youtube.com/vi/Nvq0uEC3VDM/maxres2.jpg",
+        url: "https://youtu.be/Nvq0uEC3VDM",
         title: "굳은 어깨를 자유롭게 하는 요가",
         detail:
           "이제 모든 준비는 끝났어요. 가슴과 등 상부, 목을 동시에 움직여 어깨를 자유롭게 해봅니다. ",
