@@ -9,12 +9,12 @@ const Detail = (props) => {
 
   return (
     <div className="videolist-container">
-      <div className="top-content">
+      <div className="text-container">
         <h3 className="title">{bodyPart.title}</h3>
         {/* <h3 className="body-title">{bodyPart.title}</h3> */}
-        <div className="body-title-detail">{bodyPart.titleDetail}</div>
+        <div className="detail">{bodyPart.titleDetail}</div>
       </div>
-      <div className="video-content">
+      <div className="video-container">
         {bodyPart.playList.map((item, index) => (
           <div className="video-image" key={index}>
             <img
@@ -22,7 +22,7 @@ const Detail = (props) => {
               src={item.thumbnail}
               alt="요가 이미지"
             ></img>
-            {/* <i className="fab fa-youtube"></i> */}
+            <i className="fab fa-youtube"></i>
             <div className="video-title">{item.title}</div>
           </div>
         ))}
