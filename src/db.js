@@ -23,14 +23,16 @@ const data = [
     objectPosition: "5% 50%",
     playList: [
       {
-        // thumnail: "https://img.youtube.com/vi/OVlJOnHYVqA/mqdefault.jpg",
+        number: "첫 번째 수련",
         thumbnail: "https://img.youtube.com/vi/TH-Nbk-HUos/maxres3.jpg",
+        objectPosition: "70% 0%",
         url: "https://youtu.be/TH-Nbk-HUos",
         title: "현재의 목과 등 상부의 긴장을 알아보는 요가 ",
         detail:
           "첫 시간입니다. 가볍게 시작해봅니다. 나의 목과 등 상부를 부드럽게 움직여, 움직임의 범위를 확인해봅니다.",
       },
       {
+        number: "두 번째 수련",
         thumbnail: "https://img.youtube.com/vi/SqjhjyWQ1TA/maxres3.jpg",
         url: "https://youtu.be/",
         title: "목과 등 상부에 쌓인 긴장을 풀어주는 요가",
@@ -38,7 +40,9 @@ const data = [
           "이전 수련에서 다들 목에 쌓인 뻐근함 확인하셨나요? 이번 시간에는 목과 등 상부에 쌓인 습관적인 긴장을 풀어주는 요가를 진행합니다. 호흡이 끊기지 않게 이어가봅니다.",
       },
       {
+        number: "세 번째 수련",
         thumbnail: "https://img.youtube.com/vi/Nvq0uEC3VDM/maxres2.jpg",
+        objectPosition: "30% 0%",
         url: "https://youtu.be/Nvq0uEC3VDM",
         title: "굳은 어깨를 자유롭게 하는 요가",
         detail:
