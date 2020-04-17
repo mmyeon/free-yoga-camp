@@ -5,6 +5,7 @@ import "./VideoList.scss";
 const Detail = (props) => {
   // console.log(props.match.params.id);
   const bodyPart = db.find((item) => item.id === props.match.params.id);
+
   // console.log(db.find(item => (item.id === props.match.params.id));
 
   return (
@@ -18,12 +19,16 @@ const Detail = (props) => {
         {bodyPart.playList.map((item, index) => (
           <div className="video-image" key={index}>
             <img
-              className="video-thumbnail"
+              className="thumbnail"
               src={item.thumbnail}
+              style={{ objectPosition: item.objectPosition }}
               alt="요가 이미지"
             ></img>
             <i className="fab fa-youtube"></i>
-            <div className="video-title">{item.title}</div>
+            <div className="right-wrapper">
+              <div className="order">{item.order}</div>
+              <div className="title">{item.title}</div>
+            </div>
           </div>
         ))}
       </div>
