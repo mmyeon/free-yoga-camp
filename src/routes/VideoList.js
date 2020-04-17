@@ -1,6 +1,7 @@
 import React from "react";
 import db from "../db";
 import "./VideoList.scss";
+import ReactPlayer from "react-player";
 
 const Detail = (props) => {
   // console.log(props.match.params.id);
@@ -31,6 +32,12 @@ const Detail = (props) => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="display-video">
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+          playing
+        />
       </div>
     </div>
   );
