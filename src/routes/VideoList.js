@@ -53,6 +53,7 @@ const Detail = (props) => {
   );
 
   function handleClick() {
+    // TODO: 클릭하면 바로 화면 뜨도록 수정
     setDisplay("block");
     const video = document.getElementById("video");
     screenfull.request(video);
