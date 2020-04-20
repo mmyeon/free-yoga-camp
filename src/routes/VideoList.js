@@ -8,6 +8,7 @@ const Detail = (props) => {
   // console.log(props.match.params.id);
   const bodyPart = db.find((item) => item.id === props.match.params.id);
   const [display, setDisplay] = useState("none");
+  const [isplayed, setIsPlayed] = useState(false);
   // console.log(db.find(item => (item.id === props.match.params.id));
 
   return (
@@ -44,8 +45,8 @@ const Detail = (props) => {
           className="player"
           url="https://youtu.be/TH-Nbk-HUos"
           // url={}
-          playing
-          muted
+          playing={isplayed}
+          controls
           width="100%"
           height="100%"
         />
@@ -62,6 +63,7 @@ const Detail = (props) => {
       screenfull.on("change", (event) => {
         if (screenfull.off) {
           setDisplay("none");
+          setIsPlayed(!isplayed);
         }
       });
     }
