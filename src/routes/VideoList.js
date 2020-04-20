@@ -36,10 +36,8 @@ const Detail = (props) => {
           </div>
         ))}
       </div>
-      {/* <div className="display-video" style={{ display: "none" }}> */}
 
       <div className="player-wrapper" style={{ display }}>
-        {/* <div className="display-video" style={{ display: setDisplay }}> */}
         <ReactPlayer
           id="video"
           className="player"
