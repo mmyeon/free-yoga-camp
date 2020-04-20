@@ -4,11 +4,6 @@ import "./Header.scss";
 const Header = () => {
   const [isOpenedSideNav, setIsOpenedSideNav] = useState(false);
 
-  function handleClick() {
-    setIsOpenedSideNav(!isOpenedSideNav);
-    // console.log("ghcnf");
-  }
-
   return (
     <div className="header-container">
       <div className={`side-nav-overlay ${isOpenedSideNav ? "active" : ""}`}>
@@ -34,6 +29,11 @@ const Header = () => {
       </div>
     </div>
   );
+
+  function handleClick() {
+    setIsOpenedSideNav(!isOpenedSideNav);
+    // console.log("ghcnf");
+  }
 };
 
 export default Header;
