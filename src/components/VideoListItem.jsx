@@ -1,14 +1,15 @@
-import React, { useState } from "react";
-import ReactPlayer from "react-player";
-import screenfull from "screenfull";
+import React from "react";
+import "./VideoListItem.scss";
 
-const VideoListItem = ({ item }) => {
-  const [display, setDisplay] = useState("none");
-  const [isplayed, setIsPlayed] = useState(false);
-
+const VideoListItem = ({ item, setVideoUrl }) => {
   return (
     <>
-      <div className="item-wrapper" onClick={handleClick}>
+      <div
+        className="item-wrapper"
+        onClick={() => {
+          handleClick(item.url);
+        }}
+      >
         <div className="video-image">
           <img
             className="thumbnail"
@@ -23,35 +24,11 @@ const VideoListItem = ({ item }) => {
           </div>
         </div>
       </div>
-
-      <div className="player-wrapper" style={{ display }}>
-        <ReactPlayer
-          id="video"
-          className="player"
-          url={item.url}
-          playing={isplayed}
-          controls
-          width="100%"
-          height="100%"
-        />
-      </div>
     </>
   );
 
-  function handleClick() {
-    // TODO: 클릭하면 바로 화면 뜨도록 수정
-    setDisplay("block");
-    const video = document.getElementById("video");
-    screenfull.request(video);
-
-    if (screenfull.isEnabled) {
-      screenfull.on("change", (event) => {
-        if (screenfull.off) {
-          setDisplay("none");
-          setIsPlayed(!isplayed);
-        }
-      });
-    }
+  function handleClick(url) {
+    setVideoUrl(url);
   }
 };
 

@@ -23,6 +23,7 @@ const data = [
     objectPosition: "5% 50%",
     playList: [
       {
+        id: "neck",
         order: "첫 번째 수련",
         thumbnail: "https://img.youtube.com/vi/TH-Nbk-HUos/maxres3.jpg",
         objectPosition: "70% 0%",
