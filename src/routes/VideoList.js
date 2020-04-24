@@ -53,6 +53,11 @@ const Detail = (props) => {
           controls
           width="100%"
           height="100%"
+          config={{
+            youtube: {
+              playerVars: { start: 1 },
+            },
+          }}
         />
       </div>
     </div>
