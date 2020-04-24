@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpenedSideNav, setIsOpenedSideNav] = useState(false);
@@ -23,7 +24,9 @@ const Header = () => {
         <div className="icon-wrapper">
           <div className="icons">
             <i className="fas fa-bars nav-bars" onClick={handleClick}></i>
-            <i className="fas fa-wind logo"></i>
+            <Link to="/">
+              <i className="fas fa-wind logo"></i>
+            </Link>
           </div>
         </div>
       </div>
