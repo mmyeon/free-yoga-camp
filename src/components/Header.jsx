@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
+import db from "../db";
 
 const Header = () => {
   const [isOpenedSideNav, setIsOpenedSideNav] = useState(false);
@@ -12,10 +13,9 @@ const Header = () => {
           <i className="fas fa-times close-btn" onClick={handleClick}></i>
           {isOpenedSideNav && (
             <ul>
-              <li>상체를 위한 요가</li>
-              <li>상체를 위한 요가</li>
-              <li>상체를 위한 요가</li>
-              <li>상체를 위한 요가</li>
+              {db.map((item) => (
+                <li>{item.title}</li>
+              ))}
             </ul>
           )}
         </div>
