@@ -44,18 +44,20 @@
 
       > ul {
         width: 200px;
-
-        > li {
-          font-size: 20px;
-          padding: 10px 8px 10px 19px;
-          list-style: none;
-          display: block;
-          color: #ddd;
-          cursor: pointer;
-          transition: 0.3s;
-          // &:hover {
-          //   color: #f1f1f1;
-          // }
+        > a {
+          // text-decoration: none;
+          > li {
+            font-size: 20px;
+            padding: 10px 8px 10px 19px;
+            list-style: none;
+            display: block;
+            color: #ddd;
+            cursor: pointer;
+            transition: 0.3s;
+            // &:hover {
+            //   color: #f1f1f1;
+            // }
+          }
         }
       }
     }

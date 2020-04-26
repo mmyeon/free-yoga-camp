@@ -14,7 +14,9 @@ const Header = () => {
           {isOpenedSideNav && (
             <ul>
               {db.map((item) => (
-                <li>{item.title}</li>
+                <Link to={{ pathname: `/${item.id}` }}>
+                  <li onClick={handleClick}>{item.title}</li>
+                </Link>
               ))}
             </ul>
           )}
