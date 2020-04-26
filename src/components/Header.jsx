@@ -37,6 +37,7 @@ const Header = () => {
 
   function handleClick() {
     setIsOpenedSideNav(!isOpenedSideNav);
+    window.scrollTo(0, 0);
     // console.log("ghcnf");
   }
 };
