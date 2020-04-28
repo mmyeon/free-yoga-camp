@@ -75,6 +75,13 @@
 
         &.visible {
           visibility: visible;
+
+          &:hover {
+            // position: relative;
+            margin-top: -2px;
+            transition: margin-top 0.4s;
+            opacity: 80%;
+          }
         }
       }
     }
