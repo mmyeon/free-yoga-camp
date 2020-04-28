@@ -24,9 +24,13 @@
       left: 0;
       background-color: #1a1c25;
       padding-top: 60px;
-
       &.active {
-        width: 70%;
+        width: 30%;
+      }
+      @media (max-width: 600px) {
+        &.active {
+          width: 70%;
+        }
       }
 
       > .close-btn {
@@ -37,9 +41,10 @@
         color: #ddd;
         cursor: pointer;
         transition: 0.3s;
-        // &:hover {
-        //   color: #f1f1f1;
-        // }
+
+        &:hover {
+          color: #f1f1f1;
+        }
       }
 
       > ul {
@@ -54,9 +59,10 @@
             color: #ddd;
             cursor: pointer;
             transition: 0.3s;
-            // &:hover {
-            //   color: #f1f1f1;
-            // }
+
+            &:hover {
+              color: #f1f1f1;
+            }
           }
         }
       }
