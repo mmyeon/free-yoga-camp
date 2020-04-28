@@ -15,6 +15,7 @@ $main-item-width: 600px;
     transition: height 1.1s;
   }
 
+  //TODO: matchMedia 활용해서 objectposition inline스타일로 적용하기
   > img {
     position: absolute;
     object-fit: cover;
