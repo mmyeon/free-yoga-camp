@@ -1,11 +1,13 @@
+$main-item-width-mobile: 288px;
+$main-item-width: 600px;
+
 .item-container {
-  width: 288px;
+  width: $main-item-width;
   height: 85px;
-  top: 50px;
-  margin: 7px 17px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 7px auto;
+  @media (max-width: 600px) {
+    width: $main-item-width-mobile;
+  }
 
   &.clicked {
     height: 300px;
@@ -16,13 +18,21 @@
   > img {
     position: absolute;
     object-fit: cover;
-    width: 288px;
+    width: $main-item-width;
     height: 85px;
+    @media (max-width: 600px) {
+      width: $main-item-width-mobile;
+      height: 85px;
+    }
 
     &.clicked {
-      height: 300px;
       color: white;
+      height: 300px;
       transition: height 1.2s;
+      @media (max-width: 600px) {
+        height: 300px;
+        transition: height 1.2s;
+      }
     }
   }
 
@@ -35,7 +45,6 @@
       font-size: 20px;
       position: relative;
       top: 25px;
-      width: 200px;
     }
 
     > .desc {
@@ -45,7 +54,6 @@
       line-height: 1.6;
       font-size: 12px;
       color: black;
-      width: 56%;
       margin-bottom: 15px;
       display: block;
       opacity: 1;
