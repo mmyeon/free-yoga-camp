@@ -13,8 +13,8 @@ const Header = () => {
           <i className="fas fa-times close-btn" onClick={handleClick}></i>
           {isOpenedSideNav && (
             <ul>
-              {db.map((item) => (
-                <Link to={{ pathname: `/${item.id}` }}>
+              {db.map((item, index) => (
+                <Link to={{ pathname: `/${item.id}` }} key={index}>
                   <li onClick={handleClick}>{item.title}</li>
                 </Link>
               ))}
