@@ -11,13 +11,15 @@ const VideoListItem = ({ item, setVideoUrl }) => {
         }}
       >
         <div className="video-image">
-          <img
-            className="thumbnail"
-            src={item.thumbnail}
-            style={{ objectPosition: item.objectPosition }}
-            alt="요가 이미지"
-          ></img>
-          <i className="fab fa-youtube"></i>
+          <div className="image-container">
+            <img
+              className="thumbnail"
+              src={item.thumbnail}
+              style={{ objectPosition: item.objectPosition }}
+              alt="요가 이미지"
+            ></img>
+            <i className="fab fa-youtube"></i>
+          </div>
           <div className="right-wrapper">
             <div className="order">{item.order}</div>
             <div className="title">{item.title}</div>
