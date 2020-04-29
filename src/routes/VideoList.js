@@ -27,6 +27,7 @@ const Detail = (props) => {
       } else {
         setIsPlayed(false);
         setDisplay("none");
+        setVideoUrl("");
       }
     });
 
@@ -47,18 +48,20 @@ const Detail = (props) => {
         ))}
       </div>
       <div className="player-wrapper" style={{ display }} ref={playerRef}>
-        <ReactPlayer
-          url={videoUrl}
-          playing={isplayed}
-          controls
-          width="100%"
-          height="100%"
-          config={{
-            youtube: {
-              playerVars: { start: 1 },
-            },
-          }}
-        />
+        {isplayed && (
+          <ReactPlayer
+            url={videoUrl}
+            playing={isplayed}
+            controls
+            width="100%"
+            height="100%"
+            config={{
+              youtube: {
+                playerVars: { start: 1 },
+              },
+            }}
+          />
+        )}
       </div>
     </div>
   );
